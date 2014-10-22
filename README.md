@@ -14,7 +14,7 @@ docker build -t piwik .
 Quick Start
 -----------
 
-`docker run -p 80:80 piwik`
+`docker run -p 80:80 stoneo/docker-piwik:latest`
 
 Point your browser to `http://127.0.0.1`
 
