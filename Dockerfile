@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-ENV version 2.17.1
+ENV version 3.0.0
 
 # Variables d'environnement
 ENV DEBIAN_FRONTEND noninteractive
