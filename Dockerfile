@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-ENV version 3.0.0
+ENV PIWIK_VERSION 3.0.1
 
 # Variables d'environnement
 ENV DEBIAN_FRONTEND noninteractive
@@ -15,7 +15,7 @@ RUN apt-get install -y apache2 php5 php5-gd php5-mysql wget unzip
 # Piwik
 RUN rm -R /var/www/html
 RUN cd /var/ && wget http://builds.piwik.org/piwik.zip
-RUN cd /var/ && wget https://builds.piwik.org/piwik-${version}.zip
+RUN cd /var/ && wget https://builds.piwik.org/piwik-${PIWIK_VERSION}.zip
 RUN cd /var/ && unzip piwik.zip && rm piwik.zip
 RUN mv /var/piwik /var/www/html
 RUN chown -R www-data:www-data /var/www/html
