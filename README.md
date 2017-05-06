@@ -16,7 +16,7 @@ Quick Start
 
 ```
 docker run -d --name mysql -e MYSQL_ROOT_PASSWORD=mypass -e MYSQL_DATABASE=piwik mysql
-docker run -d --name piwik -p 80:80 --link mysql:mysql stoneo/docker-piwik
+docker run -d --name piwik -p 80:80 --link mysql:mysql jcherqui/docker-piwik
 ```
 
 Point your browser to `http://127.0.0.1`
