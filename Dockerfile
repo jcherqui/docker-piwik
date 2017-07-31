@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-ENV PIWIK_VERSION 3.0.3
+ENV PIWIK_VERSION 3.0.4
 
 # Variables d'environnement
 ENV DEBIAN_FRONTEND noninteractive
